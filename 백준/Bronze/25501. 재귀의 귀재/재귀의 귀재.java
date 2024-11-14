@@ -46,6 +46,8 @@ public class Main {
     static int isPalindrome(String s) {
         // 테스트 케이스만큼 호출할 예정이므로 callCnt를 0으로 초기화 합니다.
         callCnt = 0;
+        // C언어에서 string.h의 strlen() 함수는 문자열의 길이를 의미하므로
+        // 이에 맞게 length() 메소드를 이용합니다.
         return recursion(s, 0, s.length()-1);
     }
 
